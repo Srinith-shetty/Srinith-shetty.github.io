@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home IoT Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #333;
+        }
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0d6efd;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #0d6efd;
+            color: white;
+            margin-top: 20px;
+        }
+        code {
+            background: #eee;
+            padding: 5px;
+            display: block;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Smart Home IoT System</h1>
+    <p>By Srinith Shetty & Vikyath Bhandary</p>
+</header>
+
+<section>
+    <h2>📌 Project Overview</h2>
+    <p>
+        This project demonstrates an IoT-based home automation system using the ESP8266 NodeMCU and a 2-channel relay module.
+        It allows users to control devices remotely using the Blynk app over Wi-Fi.
+    </p>
+</section>
+
+<section>
+    <h2>🔧 Components Used</h2>
+    <ul>
+        <li>ESP8266 NodeMCU</li>
+        <li>2-Channel Relay Module</li>
+        <li>2 LEDs</li>
+        <li>9V Battery</li>
+        <li>Breadboard</li>
+        <li>Jumper Wires</li>
+        <li>USB Cable</li>
+        <li>Wi-Fi Hotspot</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🔌 Circuit Connections</h2>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Connection</th>
+        </tr>
+        <tr>
+            <td>Relay IN1</td>
+            <td>D1 (GPIO5)</td>
+        </tr>
+        <tr>
+            <td>Relay IN2</td>
+            <td>D2 (GPIO4)</td>
+        </tr>
+        <tr>
+            <td>Relay VCC</td>
+            <td>3.3V</td>
+        </tr>
+        <tr>
+            <td>Relay GND</td>
+            <td>GND</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>💻 Software & Libraries</h2>
+    <ul>
+        <li>Arduino IDE</li>
+        <li>ESP8266 Board Package</li>
+        <li>Blynk Library</li>
+    </ul>
+</section>
+
+<section>
+    <h2>📱 Blynk Setup</h2>
+    <ul>
+        <li>Create a device in Blynk Cloud</li>
+        <li>Add two buttons:</li>
+        <ul>
+            <li>V1 → Relay 1</li>
+            <li>V2 → Relay 2</li>
+        </ul>
+        <li>Set mode to Switch</li>
+    </ul>
+</section>
+
+<section>
+    <h2>▶️ How to Run</h2>
+    <code>
+        git clone https://github.com/&lt;your-username&gt;/Smart-home-Project.git
+    </code>
+    <ul>
+        <li>Open in Arduino IDE</li>
+        <li>Update Wi-Fi credentials</li>
+        <li>Upload code to NodeMCU</li>
+        <li>Control using Blynk app</li>
+    </ul>
+</section>
+
+<section>
+    <h2>⚙️ Working Principle</h2>
+    <p>
+        The NodeMCU connects to Wi-Fi and communicates with the Blynk app.
+        Based on user input, it controls GPIO pins which trigger relays to switch devices ON/OFF.
+    </p>
+</section>
+
+<section>
+    <h2>🔮 Future Enhancements</h2>
+    <ul>
+        <li>Add more relays</li>
+        <li>Integrate sensors</li>
+        <li>Enable voice control</li>
+        <li>Create a web dashboard</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Smart Home IoT Project | MIT License</p>
+</footer>
+
+</body>
+</html>
